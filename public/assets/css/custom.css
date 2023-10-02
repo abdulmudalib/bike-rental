@@ -1,0 +1,27 @@
+/* Style the modal */
+.modal {
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+/* Style the modal content */
+.modal-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: modalOpen;
+    animation-duration: 0.4s;
+}
+
+/* Animate the modal open */
+@keyframes modalOpen {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

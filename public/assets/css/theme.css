@@ -1,0 +1,124 @@
+/* Theme default style */
+:root {
+  /* define app major colors */
+  --primaryColor: rgb(119, 142, 227);
+  --secondaryColor: rgb(68, 70, 84);
+
+  /* alert colors */
+  --color-danger: #ff7782;
+  --color-warning: #ffbb55;
+  --color-success: #41f1b6;
+
+  --color-dark: #363949;
+  --color-light: #dce1eb;
+
+  /* app additional colors */
+  --customColor-1: rgb(255, 255, 255);
+  --customColor-2: rgb(32, 33, 35);
+  --customColor-3: rgb(103, 116, 131);
+
+  /* pri sec color opacity */
+  --primaryColor-100: rgb(119, 142, 227, 0.1);
+  --primaryColor-200: rgb(119, 142, 227, 0.2);
+  --primaryColor-300: rgb(119, 142, 227, 0.3);
+  --primaryColor-400: rgb(119, 142, 227, 0.4);
+  --primaryColor-500: rgb(119, 142, 227, 0.5);
+  --primaryColor-600: rgb(119, 142, 227, 0.6);
+  --primaryColor-700: rgb(119, 142, 227, 0.7);
+  --primaryColor-800: rgb(119, 142, 227, 0.8);
+
+  --secondaryColor-100: rgb(68, 70, 84, 0.1);
+  --secondaryColor-200: rgb(68, 70, 84, 0.2);
+  --secondaryColor-300: rgb(68, 70, 84, 0.3);
+  --secondaryColor-400: rgb(68, 70, 84, 0.4);
+  --secondaryColor-500: rgb(68, 70, 84, 0.5);
+  --secondaryColor-600: rgb(68, 70, 84, 0.6);
+  --secondaryColor-700: rgb(68, 70, 84, 0.7);
+  --secondaryColor-800: rgb(68, 70, 84, 0.8);
+
+  /* custom colors opacity */
+  --customColor-1-100: rgb(255, 255, 255, 0.1);
+  --customColor-1-200: rgb(255, 255, 255, 0.2);
+  --customColor-1-300: rgb(255, 255, 255, 0.3);
+  --customColor-1-400: rgb(255, 255, 255, 0.4);
+  --customColor-1-500: rgb(255, 255, 255, 0.5);
+  --customColor-1-600: rgb(255, 255, 255, 0.6);
+  --customColor-1-700: rgb(255, 255, 255, 0.7);
+  --customColor-1-800: rgb(255, 255, 255, 0.8);
+
+  --customColor-2-100: rgb(32, 33, 35, 0.1);
+  --customColor-2-200: rgb(32, 33, 35, 0.2);
+  --customColor-2-300: rgb(32, 33, 35, 0.3);
+  --customColor-2-400: rgb(32, 33, 35, 0.4);
+  --customColor-2-500: rgb(32, 33, 35, 0.5);
+  --customColor-2-600: rgb(32, 33, 35, 0.6);
+  --customColor-2-700: rgb(32, 33, 35, 0.7);
+  --customColor-2-800: rgb(32, 33, 35, 0.8);
+
+  --customColor-3-100: rgb(103, 116, 131, 0.1);
+  --customColor-3-200: rgb(103, 116, 131, 0.2);
+  --customColor-3-300: rgb(103, 116, 131, 0.3);
+  --customColor-3-400: rgb(103, 116, 131, 0.4);
+  --customColor-3-500: rgb(103, 116, 131, 0.5);
+  --customColor-3-600: rgb(103, 116, 131, 0.6);
+  --customColor-3-700: rgb(103, 116, 131, 0.7);
+  --customColor-3-800: rgb(103, 116, 131, 0.8);
+
+  /* default font sizes */
+  --fontSize-xs: .75rem;
+  --fontSize-sm: .875rem;
+  --fontSize-md: 1rem;
+  --fontSize-lg: 1.125rem;
+  --fontSize-xl: 1.25rem;
+  /* default font families */
+  --primaryFontFamily: "Poppins", sans-serif;
+  --secondaryFontFamily: ;
+  --otherFontFamily: ;
+}
+
+/* default */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+input {
+  background-color: inherit;
+  color: inherit;
+}
+
+a {
+  color: var(--color-light);
+}
+
+body {
+  background-color: var(--customColor-2);
+  color: var(--color-light);
+  min-height: 100vh;
+  font-family: var(--primaryFontFamily);
+}
+
+
+.sec-theme-color {
+  background-color: var(--secondaryColor);
+  background-color: var(--secondaryColor-600);
+}
+
+.hoverColor-sec:hover {
+  background-color: var(--secondaryColor-600);
+
+}
+
+.fixed {
+  background-color: var(--customColor-2);
+}

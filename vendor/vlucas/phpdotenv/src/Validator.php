@@ -31,8 +31,6 @@ class Validator
      * @param \Dotenv\Repository\RepositoryInterface $repository
      * @param string[]                               $variables
      *
-     * @throws \Dotenv\Exception\ValidationException
-     *
      * @return void
      */
     public function __construct(RepositoryInterface $repository, array $variables)
@@ -161,7 +159,7 @@ class Validator
      *
      * @return \Dotenv\Validator
      */
-    private function assert(callable $callback, string $message)
+    public function assert(callable $callback, string $message)
     {
         $failing = [];
 
@@ -193,7 +191,7 @@ class Validator
      *
      * @return \Dotenv\Validator
      */
-    private function assertNullable(callable $callback, string $message)
+    public function assertNullable(callable $callback, string $message)
     {
         return $this->assert(
             static function (?string $value) use ($callback) {

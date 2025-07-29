@@ -10,6 +10,7 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '2d7979c1deccf63ee4e2cccbc80e5ded' => __DIR__ . '/..' . '/xcholars/Support/helpers.functions.php',
     );
@@ -36,6 +37,7 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Clock\\' => 10,
             'PhpOption\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
@@ -50,6 +52,7 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
         ),
         'C' => 
         array (
+            'Carbon\\Doctrine\\' => 16,
             'Carbon\\' => 7,
         ),
         'A' => 
@@ -97,7 +100,11 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
         ),
         'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+            0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'Psr\\Clock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/clock/src',
         ),
         'PhpOption\\' => 
         array (
@@ -118,6 +125,10 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
         'Doctrine\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
+        'Carbon\\Doctrine\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine',
         ),
         'Carbon\\' => 
         array (
@@ -147,6 +158,9 @@ class ComposerStaticInit687500a3250b00ad1c25d21c4e3bcb73
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
